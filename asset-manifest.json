@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Probroferxdxd/emotiwatch.git/static/css/main.f3a1e4aa.css",
-    "main.js": "/Probroferxdxd/emotiwatch.git/static/js/main.3883a08f.js",
-    "static/js/453.c48cf035.chunk.js": "/Probroferxdxd/emotiwatch.git/static/js/453.c48cf035.chunk.js",
-    "static/media/logo.svg": "/Probroferxdxd/emotiwatch.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/Probroferxdxd/emotiwatch.git/index.html",
-    "main.f3a1e4aa.css.map": "/Probroferxdxd/emotiwatch.git/static/css/main.f3a1e4aa.css.map",
-    "main.3883a08f.js.map": "/Probroferxdxd/emotiwatch.git/static/js/main.3883a08f.js.map",
-    "453.c48cf035.chunk.js.map": "/Probroferxdxd/emotiwatch.git/static/js/453.c48cf035.chunk.js.map"
+    "main.css": "/probroferxdxd/emotiwatch/static/css/main.f3a1e4aa.css",
+    "main.js": "/probroferxdxd/emotiwatch/static/js/main.6594a257.js",
+    "static/js/453.c48cf035.chunk.js": "/probroferxdxd/emotiwatch/static/js/453.c48cf035.chunk.js",
+    "static/media/logo.svg": "/probroferxdxd/emotiwatch/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/probroferxdxd/emotiwatch/index.html",
+    "main.f3a1e4aa.css.map": "/probroferxdxd/emotiwatch/static/css/main.f3a1e4aa.css.map",
+    "main.6594a257.js.map": "/probroferxdxd/emotiwatch/static/js/main.6594a257.js.map",
+    "453.c48cf035.chunk.js.map": "/probroferxdxd/emotiwatch/static/js/453.c48cf035.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f3a1e4aa.css",
-    "static/js/main.3883a08f.js"
+    "static/js/main.6594a257.js"
   ]
 }
