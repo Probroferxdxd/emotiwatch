@@ -22,12 +22,12 @@ const App = () => {
 
       <div className="content">
         <Routes>
-          <Route path="/emotiwatch/" element={<Inicio />} />
-          <Route path="/emotiwatch/sobre-nosotros" element={<SobreNosotros />} />
-          <Route path="/emotiwatch/como-funciona" element={<ComoFunciona />} />
-          <Route path="/emotiwatch/iniciar-sesion" element={<IniciarSesion />} />
-          <Route path="/emotiwatch/registrarse" element={<Registrarse />} />
-          <Route path="/emotiwatch/panel" element={<Panel />} />
+          <Route path="/" element={<Inicio />} />
+          <Route path="/sobre-nosotros" element={<SobreNosotros />} />
+          <Route path="/como-funciona" element={<ComoFunciona />} />
+          <Route path="/iniciar-sesion" element={<IniciarSesion />} />
+          <Route path="/registrarse" element={<Registrarse />} />
+          <Route path="/panel" element={<Panel />} />
         </Routes>
       </div>
     </div>
