@@ -9,10 +9,10 @@ const nombre = "EmotiWatch";
 const SeccionBotones = () => {
   return (
     <div className="seccion-botones">
-      <Link to="/iniciar-sesion">
+      <Link to="/emotiwatch/iniciar-sesion">
         <button className="btn iniciar-sesion">Iniciar Sesión</button>
       </Link>
-      <Link to="/registrarse">
+      <Link to="/emotiwatch/registrarse">
         <button className="btn registrarse">Registrarse</button>
       </Link>
     </div>
