@@ -1,7 +1,7 @@
 {
   "name": "ip-proyect",
   "version": "0.1.0",
-  "homepage": "https://github.com/probroferxdxd.github.io/emotiwatch",
+  "homepage": "https://probroferxdxd.github.io/emotiwatch/",
   "private": false,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
