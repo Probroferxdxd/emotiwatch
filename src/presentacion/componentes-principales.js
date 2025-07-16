@@ -78,7 +78,7 @@ const Navbar = () => {
             X
           </span>
         </div>
-        <NavLink to="/" className="nav-link">
+        <NavLink to="/emotiwatch/" className="nav-link">
           <a
             onClick={() => {
               desactivarMenu();
@@ -87,7 +87,7 @@ const Navbar = () => {
             Inicio
           </a>
         </NavLink>
-        <NavLink to="/sobre-nosotros" className="nav-link">
+        <NavLink to="/emotiwatch/sobre-nosotros" className="nav-link">
           <a
             onClick={() => {
               desactivarMenu();
@@ -96,7 +96,7 @@ const Navbar = () => {
             Sobre Nosotros
           </a>
         </NavLink>
-        <NavLink to="/como-funciona" className="nav-link">
+        <NavLink to="/emotiwatch/como-funciona" className="nav-link">
           <a
             onClick={() => {
               desactivarMenu();
@@ -167,7 +167,7 @@ const IniciarSesion = () => {
           required
           onChange={handleChange}
         />
-        <Link to="/panel">
+        <Link to="/emotiwatch/panel">
           <button type="submit" className="btn iniciar-sesion">
             Iniciar Sesión
           </button>
@@ -222,7 +222,7 @@ const Registrarse = () => {
           required
           onChange={handleChange}
         />
-        <Link to="/panel">
+        <Link to="/emotiwatch/panel">
           <button type="submit" className="btn registrarse">
             Registrarse
           </button>
