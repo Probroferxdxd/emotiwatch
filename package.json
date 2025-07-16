@@ -2,7 +2,7 @@
   "name": "ip-proyect",
   "version": "0.1.0",
   "homepage": "https://probroferxdxd.github.io/emotiwatch/",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
