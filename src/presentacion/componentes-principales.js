@@ -1,8 +1,11 @@
 import { NavLink, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import imagen1Src from "../imagenes/registrarse.png"; // Importa la imagen de registrarse
+import imagenes2Src from "../imagenes/añadir-dispositivo.png"; // Importa la imagen de cómo funciona
+import logo from "../imagenes/logo.png"; // Importa el logo
 //  Constantes
 
-const nombre = "EmotiWatch";
+const nombre = "EmotiBand";
 
 //Seccion Botones
 
@@ -24,10 +27,11 @@ const SeccionBotones = () => {
 const Inicio = () => {
   return (
     <div className="inicio">
-      <h1>Mantenga seguro a su niño</h1>
+      <h1>Mantenga seguro a su menor</h1>
       <p style={{ textAlign: "justify" }}>
-        {nombre} es un dispositivo portátil que permite a los padres monitorear
-        la salud emocional de sus hijos. Con un diseño elegante y moderno, este
+        {nombre} es un dispositivo en forma de banda elástica que permite a los
+        padres monitorear la salud emocional de sus hijos gracias a los datos
+        médicos por los sensores. Con un diseño ecoamigable y económico, este
         dispositivo se adapta a cualquier estilo de vida.
       </p>
       <SeccionBotones />
@@ -115,9 +119,9 @@ const Navbar = () => {
 const Logo = () => {
   return (
     <div className="logo">
-      <span>
-        <i class="fa-solid fa-notes-medical"></i> <b>EMOTIWATCH</b>
-      </span>
+
+        <img src={logo} style={{objectFit: "cover"}}/> <b>EMOTIWATCH</b>
+
     </div>
   );
 };
@@ -239,9 +243,9 @@ const SobreNosotros = () => {
     <div className="sobre-nosotros">
       <h1>Somos Fearless Crew</h1>
       <p>
-        Somos un equipo comprometido con la seguridad y bienestar de los niños.
-        Nuestro objetivo es proporcionar herramientas efectivas para que los
-        padres puedan cuidar de sus hijos de manera más eficiente.
+        Somos un equipo comprometido con la seguridad y bienestar de los
+        adolescentes. Nuestro objetivo es proporcionar herramientas efectivas
+        para que los padres puedan cuidar de sus hijos de manera más eficiente.
       </p>
     </div>
   );
@@ -252,12 +256,58 @@ const SobreNosotros = () => {
 const ComoFunciona = () => {
   return (
     <div className="como-funciona">
-      <h1>Cómo Funciona</h1>
-      <p>
-        {nombre} utiliza tecnología avanzada para monitorear las emociones de
-        los niños. A través de sensores y algoritmos, el dispositivo puede
-        detectar cambios en el estado emocional y enviar alertas a los padres.
-      </p>
+      <h2 className="titulo-principal">Guía de Uso del Dispositivo</h2>
+
+      <div className="paso-inicial">
+        <h1>¿Cómo Funciona?</h1>
+        <div className="descripcion-general">
+          <p>
+            {nombre} permite al tutor monitorear la salud emocional de sus hijos
+            a través de sensores que miden la frecuencia cardíaca y otros
+            indicadores de estrés. Los datos se envían a una aplicación móvil
+            donde el tutor puede ver el estado emocional del menor en tiempo
+            real. Para poder utilizar correctamente el dispositivo, el tutor
+            debe seguir los siguientes pasos.
+          </p>
+        </div>
+      </div>
+
+      <div className="paso">
+        <h3>Paso 1: Colocar el dispositivo</h3>
+        <p>
+          Colocar el dispositivo en la muñeca del menor, asegurándose de que
+          esté ajustado pero cómodo. Luego, encender el dispositivo y asegurarse
+          de que esté detectando dispositivos.
+        </p>
+        <div className="contenedor-imagen">
+          {/* <img src="ruta/paso1.jpg" alt="Colocar el dispositivo" /> */}
+        </div>
+      </div>
+
+      <div className="paso">
+        <h3>Paso 2: Crear cuenta e iniciar sesión</h3>
+        <p>
+          Abrir la aplicación móvil y crear una cuenta si aún no lo ha hecho.
+          Iniciar sesión con las credenciales proporcionadas durante el
+          registro.
+        </p>
+        <div className="contenedor-imagen">
+          <img src={imagen1Src} alt="Crear cuenta e iniciar sesión" />
+        </div>
+      </div>
+
+      <div className="paso">
+        <h3>Paso 3: Vincular el dispositivo</h3>
+        <p>
+          Seleccionar la opción para agregar un nuevo dispositivo y seguir las
+          instrucciones en pantalla para vincular el dispositivo con la
+          aplicación. Luego se presentará una interfaz donde se podrá ver el
+          estado emocional del menor en tiempo real.
+        </p>
+        <div className="contenedor-imagen">
+         <img src={imagenes2Src} alt="Vincular el dispositivo" />
+        </div>
+      </div>
     </div>
   );
 };
@@ -293,35 +343,31 @@ const Panel = () => {
   }, [estado]);
 
   useEffect(() => {
-  setArrayDeDispositivos((prev) =>
-    prev.map((dispositivo) => ({
-      ...dispositivo,
-      estado: estado,
-    }))
-  );
-}, [estado]);
+    setArrayDeDispositivos((prev) =>
+      prev.map((dispositivo) => ({
+        ...dispositivo,
+        estado: estado,
+      }))
+    );
+  }, [estado]);
 
   const abrirModal = () => {
     activarModal ? setActivarModal(false) : setActivarModal(true);
   };
 
   const condicional = (estadox) => {
-    if (estadox < 40) { 
-      return "Muy baja presión: " + estadox + " lpm"
-    }
-    else if (estadox > 40 && estadox < 60) {
+    if (estadox < 40) {
+      return "Muy baja presión: " + estadox + " lpm";
+    } else if (estadox > 40 && estadox < 60) {
       return "Baja presión: " + estadox + " lpm";
-    } 
-    else if(estadox >= 60 && estadox <= 100) {
+    } else if (estadox >= 60 && estadox <= 100) {
       return "Normal: " + estadox + " lpm";
-    }
-    else if(estadox > 100) {
+    } else if (estadox > 100) {
       return "Ansiedad: " + estadox + " lpm";
-    }
-    else{
+    } else {
       return "Estado crítico: " + estadox + " lpm";
     }
-  }
+  };
   return (
     <div className="panel">
       {activarModal && (
@@ -387,9 +433,7 @@ const ModalAñadirDispositivo = ({ modalActivo, añadirDispositivo }) => {
             setNombre(e.target.value);
           }}
         />
-        <button type="submit">
-          Añadir
-        </button>
+        <button type="submit">Añadir</button>
       </form>
     </div>
   );
