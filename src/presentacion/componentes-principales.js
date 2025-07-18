@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import imagen1Src from "../imagenes/registrarse.png"; // Importa la imagen de registrarse
 import imagenes2Src from "../imagenes/añadir-dispositivo.png"; // Importa la imagen de cómo funciona
 import logo from "../imagenes/logo.png"; // Importa el logo
+import imagen3Src from "../imagenes/pantalla.jpg"; // Importa la imagen de cómo funciona
 //  Constantes
 
 const nombre = "EmotiBand";
@@ -280,7 +281,7 @@ const ComoFunciona = () => {
           de que esté detectando dispositivos.
         </p>
         <div className="contenedor-imagen">
-          {/* <img src="ruta/paso1.jpg" alt="Colocar el dispositivo" /> */}
+          <img src={imagen3Src} alt="Colocar el dispositivo" />
         </div>
       </div>
 
