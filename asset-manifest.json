@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/emotiwatch/static/css/main.f3a1e4aa.css",
-    "main.js": "/emotiwatch/static/js/main.7effec58.js",
+    "main.css": "/emotiwatch/static/css/main.6f75a825.css",
+    "main.js": "/emotiwatch/static/js/main.5e5fc17f.js",
+    "static/media/logo.png": "/emotiwatch/static/media/logo.08b2f0acd8f766f33d9d.png",
+    "static/media/añadir-dispositivo.png": "/emotiwatch/static/media/añadir-dispositivo.ecf4cf69ed28d6989923.png",
+    "static/media/registrarse.png": "/emotiwatch/static/media/registrarse.c9dacee3199ff390823d.png",
     "static/media/logo.svg": "/emotiwatch/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/emotiwatch/index.html",
-    "main.f3a1e4aa.css.map": "/emotiwatch/static/css/main.f3a1e4aa.css.map",
-    "main.7effec58.js.map": "/emotiwatch/static/js/main.7effec58.js.map"
+    "main.6f75a825.css.map": "/emotiwatch/static/css/main.6f75a825.css.map",
+    "main.5e5fc17f.js.map": "/emotiwatch/static/js/main.5e5fc17f.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3a1e4aa.css",
-    "static/js/main.7effec58.js"
+    "static/css/main.6f75a825.css",
+    "static/js/main.5e5fc17f.js"
   ]
 }
